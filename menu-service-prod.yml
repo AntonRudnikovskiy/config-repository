@@ -1,12 +1,12 @@
 spring:
   datasource:
     # Используем переменные окружения для указания логинов, паролей и урлов
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
-    url: ${DB_URL}
+    username: user
+    password: password
+    url: jdbc:postgresql://postgres:15432/menu_service_db
   jpa:
     show_sql: false # Выключаем показ sql запросов
   flyway:
-    user: ${DB_USER}
-    password: ${DB_PASSWORD}
-    url: ${DB_URL}
+    user: user
+    password: password
+    url: jdbc:postgresql://postgres:15432/menu_service_db
