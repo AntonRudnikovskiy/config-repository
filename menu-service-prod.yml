@@ -3,10 +3,10 @@ spring:
     # Используем переменные окружения для указания логинов, паролей и урлов
     username: user
     password: password
-    url: jdbc:postgresql://postgres:5432/menu_service_db
+    url: jdbc:postgresql://localhost:5432/menu_service_db
   jpa:
     show_sql: false # Выключаем показ sql запросов
   flyway:
     user: user
     password: password
-    url: jdbc:postgresql://postgres:5432/menu_service_db
+    url: jdbc:postgresql://localhost:5432/menu_service_db
