@@ -6,3 +6,7 @@ spring:
     url: ${DB_URL}
   jpa:
     show_sql: false # Выключаем показ sql запросов
+  flyway:
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    url: ${FLYWAY_DB_URL}
