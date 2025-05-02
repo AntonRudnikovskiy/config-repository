@@ -7,6 +7,6 @@ spring:
   jpa:
     show_sql: false # Выключаем показ sql запросов
   flyway:
-    user: ${DB_USER}
-    password: ${DB_PASSWORD}
-    url: ${FLYWAY_DB_URL}
+    user: user
+    password: password
+    url: jdbc:postgresql://postgres:5432/menu_service_db
